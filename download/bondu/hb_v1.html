@@ -1,0 +1,140 @@
+<style>
+	body {
+	background: linear-gradient(
+    rgba(0, 0, 0, 0.9),
+    rgba(0, 0, 0, 0.9)
+  ),
+  /*url('https://img.freepik.com/premium-vector/black-grid-notebook-paper-texture_77417-1611.jpg');*/
+        background-repeat: repeat;
+        background-position: center;
+	text-align: center;
+	color: #506b7c!important;
+	font-size: 11px;
+	font-family: tahoma, verdana;
+	font-weight: bold;
+	}
+	a:link, a:active {
+	color: #0077c2;
+	font-family: tahoma, verdana;
+	text-decoration: none!important;
+	}
+	a:visited {
+	color: #0077c2;
+	font-family: tahoma, verdana;
+	text-decoration: none!important;
+	}
+	a:hover {
+	color: #5cc0ff;
+	font-family: tahoma, verdana;
+	text-decoration: none!important;
+	}
+	#body {
+	margin: 0 auto;
+	text-align: left;
+	width: 900px;
+	color: #FFFFFF!important;
+	}
+	#top {
+	border: #FFFFFF 0px solid;
+	width: 900px;
+	height: 102px;
+	color: #FFFFFF;
+	font-size: 11px;
+	font-family: tahoma, verdana;
+	filter: alpha(opacity=90);
+	opacity: 1.0;
+	}
+
+	#left {
+	background-color: black;
+	border: #FFFFFF 0px solid;
+	float: left;
+	width: 300px;
+	height: 600px;
+	color: #506b7c;
+	font-size: 11px;
+	font-family: tahoma, verdana;
+	filter: alpha(opacity=90);
+	opacity: .90;
+	}
+
+
+	#right {
+	background-color: black;
+	border: #FFFFFF 0px solid;
+	float: right;
+	width: 600px;
+	height: 600px;
+	color: #506b7c;
+	font-size: 11px;
+	font-family: tahoma, verdana;
+	filter: alpha(opacity=90);
+	opacity: 1.0;
+	overflow:auto;
+	}
+
+	#bottom {
+	background-color: black;
+	border: #FFFFFF 0px solid;
+	float: left;
+	width: 900px;
+	height: 100px;
+	color: #FFFFFF;
+	font-size: 11px;
+	font-family: tahoma, verdana;
+	filter: alpha(opacity=100);
+	opacity: 100;
+	}
+	i,span{
+		font-weight: Normal ;
+	}
+</style>
+<head>
+  <title>XTokyo Shop</title>
+  <link rel="icon" type="image/x-icon" href="https://raw.githubusercontent.com/xtokyoshop/xtokyo.github.io/main/img/logo.png">
+</head>
+<div id="body">
+	<div id="top">
+		<div align="center">
+			<h1 style="text-transform: uppercase; color:black;">Texture / map</h1>
+			<div align="center">
+				<table>
+				<tr>
+					<td style="text-align: center;"><span style="font-size: 12px;">Headband V1</span><br><img src="https://raw.githubusercontent.com/xtokyoshop/dummy/Master/head_attach/headband%20fslim/xtokyo_headband%20p1.png" style="height: 200px; margin-top: 5px;"></td>
+				</tr>
+				<tr>
+					<td style="text-align: center;"><button style="width:100%; cursor: pointer; height: 30px;" onclick="downloadImage('https://raw.githubusercontent.com/xtokyoshop/dummy/Master/head_attach/headband%20fslim/xtokyo_headband%20p1.png','Headband V1')">Download</button></td>
+				</tr>
+				</table><br><br>
+				<h1 style="text-transform: uppercase; color:black;">Free Texture</h1>
+				<div align="center">
+				<table>
+				<tr>
+					<td style="text-align: center;"><span style="font-size: 12px;">Headband Pikachu</span><br><img src="https://raw.githubusercontent.com/xtokyoshop/dummy/Master/head_attach/headband%20fslim/xtokyo_headband%20p1%20v2%20texture.png" style="height: 200px; margin-top: 5px;"></td>
+				</tr>
+				<tr>
+					<td style="text-align: center;"><button style="width:100%; cursor: pointer; height: 30px;" onclick="downloadImage('https://raw.githubusercontent.com/xtokyoshop/dummy/Master/head_attach/headband%20fslim/xtokyo_headband%20p1%20v2%20texture.png','Headband Pikachu')">Download</button></td>
+				</tr>
+				</table>
+			</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script>
+      function downloadImage(ur,nama) {
+        const url = ur;
+        const filename = nama;
+        fetch(url)
+          .then(response => response.blob())
+          .then(blob => {
+            const url = window.URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = filename;
+            a.click();
+          })
+          .catch(() => console.error("Terjadi kesalahan saat mengunduh gambar."));
+      }
+    </script>
